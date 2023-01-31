@@ -14,6 +14,6 @@ start:
 	poetry run
 
 lint:
-	poetry run flake8
+	poetry run flake8 diff_finder
 
 .PHONY: install

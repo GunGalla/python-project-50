@@ -1,0 +1,1 @@
+"""Gendiff run script."""
