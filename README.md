@@ -6,7 +6,7 @@ Minimum required software to install the project is:
 
 - Python 3.10
 
-To install and start games you need to download build and then run following actions:
+To install app you need to download build and then run following actions:
 
 -make package-install
 
