@@ -1,6 +1,12 @@
 install:
 	poetry install
 
+test:
+	poetry run pytest
+
+test-coverage:
+	poetry run pytest --cov=hexlet_python_package --cov-report xml
+
 build:
 	poetry build
 
@@ -15,5 +21,10 @@ start:
 
 lint:
 	poetry run flake8 diff_finder
+
+selfcheck:
+	poetry check
+
+check: selfcheck lint test
 
 .PHONY: install

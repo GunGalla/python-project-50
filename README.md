@@ -13,4 +13,4 @@ To install app you need to download build and then run following actions:
 Below there are demo, rec by asciinema, to see how program works.
 
 asciinema for diff:
-https://asciinema.org/a/D6hRf7mpglJt5MTSrLlMxD2n6
+- https://asciinema.org/a/D6hRf7mpglJt5MTSrLlMxD2n6
