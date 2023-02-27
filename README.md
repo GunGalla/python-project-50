@@ -1,5 +1,6 @@
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/GunGalla/python-project-50/workflows/hexlet-check/badge.svg)](https://github.com/GunGalla/python-project-50/actions)
+[![Actions Status](https://github.com/GunGalla/python-project-50/workflows/pyci/badge.svg)](https://github.com/GunGalla/python-project-50/actions)
 [![Maintainability](https://api.codeclimate.com/v1/badges/421d69aad7bfa2b5c687/maintainability)](https://codeclimate.com/github/GunGalla/python-project-50/maintainability)
 
 Minimum required software to install the project is:
