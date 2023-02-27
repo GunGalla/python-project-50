@@ -1,6 +1,6 @@
 import pytest
 
-from diff_finder.scripts.gendiff import generate_diff
+from diff_finder.generate_diff import generate_diff
 
 @pytest.fixture
 def result():
