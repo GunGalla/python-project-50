@@ -15,6 +15,7 @@ flake8 = "^6.0.0"
 asciinema = "^2.2.0"
 pytest = "^7.2.1"
 pytest-cov = "^4.0.0"
+coverage = "^7.2.1"
 
 [tool.poetry.scripts]
 gendiff = "diff_finder.gendiff:main"
