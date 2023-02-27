@@ -1,11 +1,9 @@
-#!/usr/bin/env python3
-"""Gendiff run script."""
+"""Generate difference module"""
 import json
-
-from diff_finder.additional_info.gendiff_description import description
 
 
 def generate_diff(file_path1, file_path2):
+    """Generates difference between two files"""
     data1 = json.load(open(file_path1))
     data2 = json.load(open(file_path2))
 
@@ -26,8 +24,3 @@ def generate_diff(file_path1, file_path2):
     result += '\n}'
     print(result)
     return result
-
-
-if __name__ == '__main__':
-    generate_diff('files/file1.json', 'files/file2.json')
-    description()

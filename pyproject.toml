@@ -18,7 +18,7 @@ pytest-cov = "^4.0.0"
 coverage = "^7.2.1"
 
 [tool.poetry.scripts]
-gendiff = "diff_finder.gendiff:main"
+gendiff = "diff_finder.scripts.gendiff:main"
 
 [build-system]
 requires = ["poetry-core"]

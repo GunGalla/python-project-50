@@ -1,8 +1,6 @@
-import json
-
 import pytest
 
-from diff_finder.gendiff import generate_diff
+from diff_finder.scripts.gendiff import generate_diff
 
 @pytest.fixture
 def result():
