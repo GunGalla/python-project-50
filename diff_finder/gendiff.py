@@ -24,6 +24,7 @@ def generate_diff(file_path1, file_path2):
     result = '{\n'
     result += '\n'.join([f'{key}: {value}' for key, value in diff.items()])
     result += '\n}'
+    print(result)
     return result
 
 
