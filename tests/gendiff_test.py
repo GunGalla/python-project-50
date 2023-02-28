@@ -2,23 +2,16 @@ import pytest
 
 from diff_finder.generate_diff import generate_diff
 
-@pytest.fixture
-def result():
-    """Fixture for tests"""
-    return '''{
-  - follow: false
-    host: hexlet.io
-  - proxy: 123.234.53.22
-  - timeout: 50
-  + timeout: 20
-  + verbose: true
-}'''
 
 def test_with_empty_files():
     """Empty files test"""
     assert generate_diff("tests/fixtures/empty.json", "tests/fixtures/empty.json") == "{\n\n}"
 
 
-def test_with_actual_files(result):
+def test_with_actual_files():
     """Filled files test"""
-    assert generate_diff("tests/fixtures/file1.json", "tests/fixtures/file2.json") == result
+    with open('tests/fixtures/result_test.txt', 'r') as file:
+        result = file.read()
+    assert generate_diff("tests/fixtures/file1_test.json", "tests/fixtures/file2_test.json") == result
+    assert generate_diff("tests/fixtures/file1_test.yml", "tests/fixtures/file2_test.yml") == result
+    assert generate_diff("tests/fixtures/file1_test.json", "tests/fixtures/file2_test.yml") == result

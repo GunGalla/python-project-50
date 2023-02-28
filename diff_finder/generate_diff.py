@@ -1,11 +1,11 @@
 """Generate difference module"""
-import json
+from diff_finder.parse_files import parse_file
 
 
 def generate_diff(file_path1, file_path2):
     """Generates difference between two files"""
-    data1 = json.load(open(file_path1))
-    data2 = json.load(open(file_path2))
+    data1 = parse_file(file_path1)
+    data2 = parse_file(file_path2)
 
     diff = {}
 
