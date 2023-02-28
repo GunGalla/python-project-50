@@ -6,7 +6,7 @@ def make_stylish(data):
     """Return stylish result"""
 
     result = stylish(data)
-    print(result)
+
     return result
 
 
@@ -49,8 +49,12 @@ def build_line(key, value, sign, depth):
             indent, sign, key, restruct_dict(value, depth + 1)))
 
     else:
-        lines.append('{}  {} {}: {}'.format(
-            indent, sign, key, format_value(value)))
+        if value == '':
+            lines.append('{}  {} {}:{}'.format(
+                indent, sign, key, format_value(value)))
+        else:
+            lines.append('{}  {} {}: {}'.format(
+                indent, sign, key, format_value(value)))
 
     return '\n'.join(lines)
 
@@ -77,6 +81,8 @@ def format_value(value):
         formatted = 'null'
     elif isinstance(value, (int, float)):
         formatted = str(value)
+    elif value == '':
+        formatted = ''
     else:
         formatted = f'{value}'
     return formatted

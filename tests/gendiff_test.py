@@ -15,10 +15,19 @@ def test_with_empty_files():
     assert generate_diff("tests/fixtures/empty.json", "tests/fixtures/empty.json") == '{\n}'
 
 
-def test_with_actual_files():
+def test_with_actual_flat_files():
     """Filled files test"""
     with open('tests/fixtures/result_test.txt', 'r') as file:
         result = file.read()
     assert generate_diff("tests/fixtures/file1_test.json", "tests/fixtures/file2_test.json") == result
     assert generate_diff("tests/fixtures/file1_test.yml", "tests/fixtures/file2_test.yml") == result
     assert generate_diff("tests/fixtures/file1_test.json", "tests/fixtures/file2_test.yml") == result
+
+
+def test_with_actual_nested_files():
+    """Nested files diff test"""
+    with open('tests/fixtures/result.txt', 'r') as file:
+        result = file.read()
+    assert generate_diff("tests/fixtures/file1.json", "tests/fixtures/file2.json") == result
+    assert generate_diff("tests/fixtures/file1.yml", "tests/fixtures/file2.yml") == result
+    assert generate_diff("tests/fixtures/file1.json", "tests/fixtures/file2.yml") == result
