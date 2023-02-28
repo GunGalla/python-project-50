@@ -6,8 +6,8 @@ def make_stylish(data):
     """Return stylish result"""
 
     result = stylish(data)
-
-    return print(result)
+    print(result)
+    return result
 
 
 def stylish(items, depth=0):
