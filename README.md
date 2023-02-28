@@ -19,3 +19,6 @@ asciinema for diff with json files only:
 
 asciinema for diff with installed package and using json/yml files:
 - https://asciinema.org/a/OyxmRj8ENeKTaKn2vbhIbMtik
+
+asciinema for diff between nested files of json/yml files:
+- https://asciinema.org/a/daNkmWnQEaEB6mJ6hoziYzojH
