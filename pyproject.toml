@@ -4,7 +4,7 @@ version = "0.1.0"
 description = "difference finder"
 authors = ["Iaroslav <GunGalla@gmail.com>"]
 readme = "README.md"
-packages = [{include = "diff_finder"}]
+packages = [{include = "gendiff"}]
 
 [tool.poetry.dependencies]
 python = "^3.10"

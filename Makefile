@@ -5,7 +5,7 @@ test:
 	poetry run pytest
 
 test-coverage:
-	poetry run pytest --cov=diff_finder --cov-report xml
+	poetry run pytest --cov=gendiff --cov-report xml
 
 build:
 	poetry build
@@ -20,7 +20,7 @@ start:
 	poetry run
 
 lint:
-	poetry run flake8 diff_finder
+	poetry run flake8 gendiff
 
 selfcheck:
 	poetry check
