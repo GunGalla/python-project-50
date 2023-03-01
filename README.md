@@ -8,9 +8,17 @@ Minimum required software to install the project is:
 
 - Python 3.10
 
+This project was built using these tools:
+
+| Tool                                                                        | Description                                             |
+|-----------------------------------------------------------------------------|---------------------------------------------------------|
+| [poetry](https://poetry.eustace.io/)                                        | "Python dependency management and packaging made easy"  |
+| [Py.Test](https://pytest.org)                                               | "A mature full-featured Python testing tool"            |
+
 To install app you need to download build and then run following actions:
 
--make package-install
+`make install`
+`make package-install`
 
 Below there are demo, rec by asciinema, to see how program works.
 
