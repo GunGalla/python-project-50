@@ -5,6 +5,11 @@ description = "difference finder"
 authors = ["Iaroslav <GunGalla@gmail.com>"]
 readme = "README.md"
 packages = [{include = "gendiff"}]
+repository = "https://github.com/GunGalla/python-project-50"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
 
 [tool.poetry.dependencies]
 python = "^3.10"
