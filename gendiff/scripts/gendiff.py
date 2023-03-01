@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Gendiff run script."""
-from gendiff.gendiff_argparse import parse_args
+from gendiff.argparse import parse_args
 from gendiff.generate_diff import generate_diff
 
 

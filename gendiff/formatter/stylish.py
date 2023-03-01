@@ -16,18 +16,18 @@ def stylish(items, depth=0):
     indent = '    ' * depth
     items.sort(key=lambda item: item['key'])
     for item in items:
-        if item['action'] == 'old key':
+        if item['action'] == 'old_key':
             lines.append(build_line(item['key'], item['old_value'], '-', depth))
 
-        elif item['action'] == 'new key':
+        elif item['action'] == 'new_key':
             lines.append(build_line(item['key'], item['new_value'], '+', depth))
 
-        elif item['action'] == 'no changes':
+        elif item['action'] == 'no_changes':
             lines.append(build_line(item['key'], item['old_value'], ' ', depth))
 
-        elif item['action'] == 'new value':
-            lines.append(build_line(item['key'], item['old value'], '-', depth))
-            lines.append(build_line(item['key'], item['new value'], '+', depth))
+        elif item['action'] == 'new_value':
+            lines.append(build_line(item['key'], item['old_value'], '-', depth))
+            lines.append(build_line(item['key'], item['new_value'], '+', depth))
 
         elif item['action'] == 'parent':
             lines.append(

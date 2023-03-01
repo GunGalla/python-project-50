@@ -24,16 +24,16 @@ To install app you need to download build and then run following actions:
 Below there are demo, rec by asciinema, to see how program works.
 
 asciinema for diff with json files only:
-- https://asciinema.org/a/D6hRf7mpglJt5MTSrLlMxD2n6
+- [![asciicast](https://asciinema.org/a/D6hRf7mpglJt5MTSrLlMxD2n6.svg)](https://asciinema.org/a/D6hRf7mpglJt5MTSrLlMxD2n6)
 
 asciinema for diff with installed package and using json/yml files:
-- https://asciinema.org/a/OyxmRj8ENeKTaKn2vbhIbMtik
+- [![asciicast](https://asciinema.org/a/OyxmRj8ENeKTaKn2vbhIbMtik.svg)](https://asciinema.org/a/OyxmRj8ENeKTaKn2vbhIbMtik)
 
 asciinema for diff between nested files of json/yml files:
-- https://asciinema.org/a/daNkmWnQEaEB6mJ6hoziYzojH
+- [![asciicast](https://asciinema.org/a/daNkmWnQEaEB6mJ6hoziYzojH.svg)](https://asciinema.org/a/daNkmWnQEaEB6mJ6hoziYzojH)
 
 asciinema for diff between nested json/yml files in stylish and plain format:
-- https://asciinema.org/a/5Ht3bi5y0nSXakLASn7TltzKo
+- [![asciicast](https://asciinema.org/a/5Ht3bi5y0nSXakLASn7TltzKo.svg)](https://asciinema.org/a/5Ht3bi5y0nSXakLASn7TltzKo)
 
 asciinema for diff between nested json/yml files in json format:
-- https://asciinema.org/a/xsic942Xpmqzkd9bQmYEzfygC
+- [![asciicast](https://asciinema.org/a/xsic942Xpmqzkd9bQmYEzfygC.svg)](https://asciinema.org/a/xsic942Xpmqzkd9bQmYEzfygC)

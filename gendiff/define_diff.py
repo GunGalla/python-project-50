@@ -10,15 +10,15 @@ def define_difference(items1, items2):
         diff_result = {'key': key}
 
         if key not in items2.keys():
-            diff_result['action'] = 'old key'
+            diff_result['action'] = 'old_key'
             diff_result['old_value'] = items1[key]
 
         elif key not in items1.keys():
-            diff_result['action'] = 'new key'
+            diff_result['action'] = 'new_key'
             diff_result['new_value'] = items2[key]
 
         elif items1[key] == items2[key]:
-            diff_result['action'] = 'no changes'
+            diff_result['action'] = 'no_changes'
             diff_result['old_value'] = items1[key]
 
         elif isinstance(items1[key], dict) and isinstance(items2[key], dict):
@@ -26,8 +26,8 @@ def define_difference(items1, items2):
             diff_result['child'] = define_difference(items1[key], items2[key])
 
         else:
-            diff_result['action'] = 'new value'
-            diff_result['old value'] = items1[key]
-            diff_result['new value'] = items2[key]
+            diff_result['action'] = 'new_value'
+            diff_result['old_value'] = items1[key]
+            diff_result['new_value'] = items2[key]
         result.append(diff_result)
     return result

@@ -21,19 +21,19 @@ def plain(items, path=''):
         else:
             absolute_path = item['key']
 
-        if item['action'] == 'old key':
+        if item['action'] == 'old_key':
             lines.append(f"Property '{absolute_path}' was removed")
 
-        elif item['action'] == 'new key':
+        elif item['action'] == 'new_key':
             lines.append(
                 f"Property '{absolute_path}' was added "
                 f"with value: {format_value(item['new_value'])}")
 
-        elif item['action'] == 'new value':
+        elif item['action'] == 'new_value':
             lines.append(
                 f"Property '{absolute_path}' was updated. "
-                f"From {format_value(item['old value'])} "
-                f"to {format_value(item['new value'])}")
+                f"From {format_value(item['old_value'])} "
+                f"to {format_value(item['new_value'])}")
 
         elif item['action'] == 'parent':
             lines.append(plain(item['child'], absolute_path))
