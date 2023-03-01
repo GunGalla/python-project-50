@@ -9,5 +9,5 @@ def generate_diff(file_path1, file_path2, format='stylish'):
     data1 = parse_file(file_path1)
     data2 = parse_file(file_path2)
     diff = define_difference(data1, data2)
-
-    return make_format(diff, format)
+    result = make_format(diff, format)
+    return result
