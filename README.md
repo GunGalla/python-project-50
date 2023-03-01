@@ -22,3 +22,6 @@ asciinema for diff with installed package and using json/yml files:
 
 asciinema for diff between nested files of json/yml files:
 - https://asciinema.org/a/daNkmWnQEaEB6mJ6hoziYzojH
+
+asciinema for diff between nested json/yml files in stylish and plain format:
+-https://asciinema.org/a/5Ht3bi5y0nSXakLASn7TltzKo
