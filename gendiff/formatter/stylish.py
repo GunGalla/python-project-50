@@ -52,7 +52,7 @@ def build_line(key, value, sign, depth):
 
     else:
         if value == '':
-            lines.append(f'{indent}  {sign} {key}:{format_value(value)}')
+            lines.append(f'{indent}  {sign} {key}: {format_value(value)}')
 
         else:
             lines.append(f'{indent}  {sign} {key}: {format_value(value)}')
