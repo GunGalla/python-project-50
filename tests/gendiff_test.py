@@ -2,7 +2,7 @@
 import pytest
 import os
 
-from diff_finder.generate_diff import generate_diff
+from gendiff.generate_diff import generate_diff
 
 
 def test_help():

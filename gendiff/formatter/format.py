@@ -1,7 +1,7 @@
 """Format definition module."""
-from diff_finder.formatter.stylish import make_stylish
-from diff_finder.formatter.plain import make_plain
-from diff_finder.formatter.json import make_json
+from gendiff.formatter.stylish import make_stylish
+from gendiff.formatter.plain import make_plain
+from gendiff.formatter.json import make_json
 
 
 def make_format(diff, format):
