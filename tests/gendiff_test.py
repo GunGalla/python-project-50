@@ -26,8 +26,23 @@ def test_with_actual_flat_files():
 
 def test_with_actual_nested_files():
     """Nested files diff test"""
-    with open('tests/fixtures/result.txt', 'r') as file:
+    with open('tests/fixtures/result_nested.txt', 'r') as file:
         result = file.read()
     assert generate_diff("tests/fixtures/file1.json", "tests/fixtures/file2.json") == result
     assert generate_diff("tests/fixtures/file1.yml", "tests/fixtures/file2.yml") == result
     assert generate_diff("tests/fixtures/file1.json", "tests/fixtures/file2.yml") == result
+
+
+def test_with_actual_plain_files():
+    """Nested files diff test"""
+    with open('tests/fixtures/result_plain.txt', 'r') as file:
+        result = file.read()
+    assert generate_diff(
+        "tests/fixtures/file1.json", "tests/fixtures/file2.json", format='plain'
+    ) == result
+    assert generate_diff(
+        "tests/fixtures/file1.yml", "tests/fixtures/file2.yml", format='plain'
+    ) == result
+    assert generate_diff(
+        "tests/fixtures/file1.json", "tests/fixtures/file2.yml", format='plain'
+    ) == result

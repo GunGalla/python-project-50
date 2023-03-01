@@ -7,7 +7,8 @@ from diff_finder.generate_diff import generate_diff
 def main():
     """Starts diff script"""
     files = parse_args()
-    generate_diff(files.first_file, files.second_file)
+    diff = generate_diff(files.first_file, files.second_file, files.format)
+    print(diff)
 
 
 if __name__ == '__main__':

@@ -13,6 +13,7 @@ def parse_args():
         '-f',
         '--format',
         default='stylish',
+        choices=['stylish', 'plain'],
         help='set format of output')
     parser.parse_args()
     return parser.parse_args()

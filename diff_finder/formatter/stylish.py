@@ -30,9 +30,10 @@ def stylish(items, depth=0):
             lines.append(build_line(item['key'], item['new value'], '+', depth))
 
         elif item['action'] == 'parent':
-            lines.append('{}    {}: {}'.format(
-                indent, item['key'], stylish(item['child'], depth + 1)
-            ))
+            lines.append(
+                f"{indent}    {item['key']}: {stylish(item['child'], depth+1)}"
+            )
+
     result = itertools.chain("{", lines, [indent + "}"])
 
     return '\n'.join(result)
@@ -45,16 +46,16 @@ def build_line(key, value, sign, depth):
     lines = []
 
     if isinstance(value, dict):
-        lines.append('{}  {} {}: {}'.format(
-            indent, sign, key, restruct_dict(value, depth + 1)))
+        lines.append(
+            f'{indent}  {sign} {key}: {restruct_dict(value, depth+1)}'
+        )
 
     else:
         if value == '':
-            lines.append('{}  {} {}:{}'.format(
-                indent, sign, key, format_value(value)))
+            lines.append(f'{indent}  {sign} {key}:{format_value(value)}')
+
         else:
-            lines.append('{}  {} {}: {}'.format(
-                indent, sign, key, format_value(value)))
+            lines.append(f'{indent}  {sign} {key}: {format_value(value)}')
 
     return '\n'.join(lines)
 
