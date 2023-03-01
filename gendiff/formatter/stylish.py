@@ -2,15 +2,7 @@
 import itertools
 
 
-def make_stylish(data):
-    """Return stylish result"""
-
-    result = stylish(data)
-
-    return result
-
-
-def stylish(items, depth=0):
+def make_stylish(items, depth=0):
     """Iterates data to create string in stylish format"""
     lines = []
     indent = '    ' * depth
@@ -31,12 +23,12 @@ def stylish(items, depth=0):
 
         elif item['action'] == 'parent':
             lines.append(
-                f"{indent}    {item['key']}: {stylish(item['child'], depth+1)}"
+                f"{indent}    {item['key']}: {make_stylish(item['child'], depth+1)}"
             )
 
     result = itertools.chain("{", lines, [indent + "}"])
-
-    return '\n'.join(result)
+    final = '\n'.join(result)
+    return final
 
 
 def build_line(key, value, sign, depth):
