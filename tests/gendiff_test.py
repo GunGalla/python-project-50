@@ -1,5 +1,4 @@
 """Test module for gendiff"""
-import pytest
 import os
 
 from gendiff.generate_diff import generate_diff
