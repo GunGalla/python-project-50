@@ -18,6 +18,7 @@ This project was built using these tools:
 To install app you need to download build and then run following actions:
 
 `make install`
+
 `make package-install`
 
 Below there are demo, rec by asciinema, to see how program works.

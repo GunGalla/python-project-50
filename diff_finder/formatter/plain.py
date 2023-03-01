@@ -2,7 +2,7 @@
 
 
 def make_plain(data):
-    """Return stylish result"""
+    """Return plain result"""
 
     result = plain(data)
 
@@ -10,7 +10,7 @@ def make_plain(data):
 
 
 def plain(items, path=''):
-    """Iterates data to create string in stylish format"""
+    """Iterates data to create string in plain format"""
     lines = []
     items.sort(key=lambda item: item['key'])
 
