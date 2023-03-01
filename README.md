@@ -34,3 +34,6 @@ asciinema for diff between nested files of json/yml files:
 
 asciinema for diff between nested json/yml files in stylish and plain format:
 - https://asciinema.org/a/5Ht3bi5y0nSXakLASn7TltzKo
+
+asciinema for diff between nested json/yml files in json format:
+- https://asciinema.org/a/xsic942Xpmqzkd9bQmYEzfygC
