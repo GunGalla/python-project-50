@@ -1,5 +1,5 @@
 """Generate difference module"""
-from gendiff.parse_files import parse_file, open_file
+from gendiff.parse_files import open_file
 from gendiff.define_diff import define_difference
 from gendiff.formatter.format import make_format
 
